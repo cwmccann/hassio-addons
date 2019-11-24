@@ -1,7 +1,7 @@
 {
     "name": "eagle to mqtt",
     "version": "0.01",
-    "slug": "eagle to mqtt",
+    "slug": "eagle_to_mqtt",
     "description": "Eagle power monitoring to MQTT",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "before",
