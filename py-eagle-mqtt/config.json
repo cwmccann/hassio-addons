@@ -1,0 +1,29 @@
+{
+    "name": "Eagle to MQTT",
+    "version": "0.01",
+    "slug": "eagle to MQTT",
+    "description": "Eagle power monitoring to MQTT",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "before",
+    "boot": "auto",
+    "options": {
+        "mqttBrokerServer": "core-mosquitto",
+        "mqttBrokerPort": "",
+        "mqttUser": null,
+        "mqttPassword": null,
+        "keepAlive": 60       
+      },
+      "schema": {
+        "mqttBrokerServer": "str",
+        "mqttBrokerPort": "port",
+        "mqttUser": "str?",
+        "mqttPassword": "str?",
+        "keepAlive": "int?"
+      },
+    "ports": {
+      "22042/tcp": 22042
+    },
+    "ports_description": {
+      "22042/tcp": "Ingress from the eagle cloud monitoring"
+    }
+  }
